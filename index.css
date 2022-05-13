@@ -1,0 +1,72 @@
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	font-family: "Gilroy";
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+	cursor: default;
+}
+
+html {
+	scroll-padding-top: 88px;
+}
+
+body {
+    background-color: #070707;
+	color: #ffffff;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 34px;
+	line-height: 42px;
+}
+
+p, a {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+/*  header  */
+
+header {
+	position: sticky;
+	top:0%;
+	height: 88px;
+	width: 100%;
+	z-index: 99;
+}
+
+hr {
+    color: #9400D3;
+    height: 1px;
+    background-color: #9400D3;
+    border: none;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+ul a {
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul .active {
+    color: #828282;;
+}
+
+
+
+.wrapper {
+    height: 100%;
+    margin: auto;
+    width: 940px;
+  }
