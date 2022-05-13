@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('.slider').slick({
+		arrows:true,
+		dots:true,
+		autoplay:true,
+		speed:1000,
+		autoplaySpeed:3500,
+	});
+});
