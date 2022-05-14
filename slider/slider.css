@@ -57,11 +57,11 @@
     border: 0px;
 }
 .slider .slick-arrow.slick-prev{
-	left: 10%;
+	left: 5%;
 	background: url("../img/prev.svg") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next{
-	right: 10%;
+	right: 5%;
 	background: url("../img/next.svg") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-disabled{
@@ -92,6 +92,7 @@
 	text-align: center;
 }
 .slider__item img{
-	max-width: 75%;
+	max-width: 90%;
+	max-height: 100%;
 	cursor: pointer;
 }
