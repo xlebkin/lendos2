@@ -102,10 +102,16 @@ ul .active {
 	justify-content: space-between;
 	flex-direction: column;
 	text-align: center;
+    align-items: center;
 }
 
-.about h2{
+.about h2 {
     padding: 50px 0;
+}
+
+.about img {
+    max-width: 75%;
+    padding-top: 35px;
 }
 
 .wrapper {
