@@ -360,12 +360,12 @@ ul a {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 88px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 75px;
 }
 
 .copirate {
-    padding: 35px 0;
+    padding: 35px 0 0;
     text-align: start;
 }
 
