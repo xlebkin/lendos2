@@ -9,9 +9,9 @@
 }
 
 body {
-    background: url(img/jazz-instruments-music-background-on-dark-blackboard.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(img/jazz-instruments-music-background-on-dark-blackboard.jpg) no-repeat fixed;
     background-size: cover;
-	color: #070707;
+	color: #ffffff;
 }
 
 h2 {
@@ -36,16 +36,16 @@ p, a {
 header {
 	position: fixed;
 	top:0%;
-	height: 88px;
+	height: 75px;
 	width: 100%;
 	z-index: 99;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 hr {
-    color: #0000cc;
-    height: 2px;
-    background-color: #0000cc;
+    color: #ffffff;
+    height: 1px;
+    background-color: #ffffff;
     border: none;
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -61,7 +61,7 @@ ul {
 ul a {
     font-weight: bold;
     cursor: pointer;
-    color: #070707;
+    color: #ffffff;
 }
 
 .scroll-up {
@@ -101,7 +101,6 @@ ul a {
 
 .about-text h2 {
     padding: 10px 20px 23px;
-    color: #070707;
 }
 
 .about-text p {
@@ -110,9 +109,9 @@ ul a {
 
 .about-text {
     max-width: 400px;
-    border: 2px solid #0000cc;
+    border: 1px solid #ffffff;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .about img {
@@ -166,8 +165,8 @@ ul a {
     text-align: start;
     max-width: 320px;
 
-    background: rgba(255, 255, 255, 0.5);
-    border: 2px solid #0000cc;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffffff;
     border-radius: 25px;
 }
 
@@ -188,6 +187,39 @@ ul a {
 #Benefits .item p {
     padding: 44px 0 46px 15px;
 }
+
+.parallax {
+    position: absolute;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.parallax1 {
+    top: 1450px;
+    right: 300px;
+}
+
+.parallax2 {
+    top: 1750px;
+    left: 300px;
+}
+
+.parallax3 {
+    top: 2000px;
+    right: 350px;
+}
+
+.parallax4 {
+    top: 2350px;
+    left: 250px;
+}
+
+.parallax5 {
+    top: 2600px;
+    right: 400px;
+}
+
+/* Gallery */
 
 #Gallery {
     padding: 110px 0 75px;
@@ -215,13 +247,12 @@ ul a {
     max-width: 250px;
     margin-bottom: 40px;
 
-    background: rgb(255, 255, 255);
-    border: 2px solid #0000cc;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffffff;
 }
 
 .prod-element img {
-    padding: 10px;
-    max-width: 230px;
+    max-width: 250px;
 }
 
 .prod-element p {
@@ -233,10 +264,11 @@ ul a {
     margin: 10px;
     font-weight: bold;
     color: #FFFFFF;
-    background: #0000cc;
+    background: #000000;
     border-radius: 25px;
     cursor: pointer;
     width: 175px;
+    border: 1px solid #ffffff;
 }
 
 

@@ -81,11 +81,11 @@
 	width: 10px;
 	height: 10px;
 	background-color: transparent;
-	border: 1px solid #0000cc;
+	border: 1px solid #ffffff;
 	border-radius: 50%;
 }
 .slider .slick-dots li.slick-active button{
-	background: #0000cc;
+	background: #ffffff;
 }
 .slider__item {
 	padding: 0px 15px;

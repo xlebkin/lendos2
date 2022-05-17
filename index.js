@@ -29,3 +29,35 @@ $(window).scroll(function(){
         $(".scroll-up").css("display", "none");
     }
 });
+
+
+const image1 = document.getElementsByClassName('parallax1');
+const image2 = document.getElementsByClassName('parallax2');
+const image3 = document.getElementsByClassName('parallax3');
+const image4 = document.getElementsByClassName('parallax4');
+const image5 = document.getElementsByClassName('parallax5');
+
+new simpleParallax(image1, {
+    orientation: 'right',
+    overflow: true
+});
+
+new simpleParallax(image2, {
+    orientation: 'left',
+    overflow: true
+});
+
+new simpleParallax(image3, {
+    orientation: 'right',
+    overflow: true
+});
+
+new simpleParallax(image4, {
+    orientation: 'left',
+    overflow: true
+});
+
+new simpleParallax(image5, {
+    orientation: 'right',
+    overflow: true
+});
