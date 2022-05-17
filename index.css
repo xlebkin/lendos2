@@ -271,6 +271,96 @@ ul a {
     border: 1px solid #ffffff;
 }
 
+/* Contacts */
+
+#Contacts {
+    padding: 110px 0 75px;
+    text-align: center;
+}
+
+#Contacts form {
+    padding: 45px 0;
+    margin: 0 auto;
+}
+#Contacts form p {
+    padding: 10px 0;
+}
+
+#Contacts form input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 2px 10px;
+}
+
+#Contacts form label:not(:last-child) {
+    display: inline-block; 
+    width: 100px; 
+    text-align: right; 
+}
+
+#Contacts form button {
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#Contacts form [type=checkbox] {
+    margin-right: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 342px;
+    margin: auto;
+    padding: 35px 0;
+}
+
+.social a {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.instagramm {
+    background: url(img/instagramm.svg) center no-repeat;
+
+}
+
+.instagramm:hover {
+    background: url(img/instagramm-color.svg) center no-repeat;
+}
+
+.telegramm {
+    background: url(img/telegramm.svg) center no-repeat;
+}
+
+.telegramm:hover {
+    background: url(img/telegramm-color.svg) center no-repeat;
+}
+
+.vk {
+    background: url(img/vk.svg) center no-repeat;
+}
+
+.vk:hover {
+    background: url(img/vk-color.svg) center no-repeat;
+}
+
+.discord {
+    background: url(img/discord.svg) center no-repeat;
+}
+
+.discord:hover {
+    background: url(img/discord-color.svg) center no-repeat;
+}
+
+
+
 
 .wrapper {
     height: 100%;
