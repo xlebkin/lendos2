@@ -8,10 +8,6 @@
 	cursor: default;
 }
 
-html {
-	scroll-padding-top: 88px;
-}
-
 body {
     background-color: #070707;
 	color: #ffffff;
@@ -23,6 +19,12 @@ h2 {
 	line-height: 42px;
 }
 
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+	line-height: 22px;
+}
+
 p, a {
 	font-size: 18px;
 	line-height: 22px;
@@ -31,7 +33,7 @@ p, a {
 /*  header  */
 
 header {
-	position: sticky;
+	position: fixed;
 	top:0%;
 	height: 88px;
 	width: 100%;
@@ -52,7 +54,9 @@ ul {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    background-color: #070707;
 }
+
 ul a {
     color: #ffffff;
     font-weight: bold;
@@ -63,10 +67,100 @@ ul .active {
     color: #828282;;
 }
 
+.scroll-up {
+    display: block;
+    position: fixed;
+    background: url(img/scrollUp.svg) center no-repeat;
+    width: 50px;
+    height: 50px;
+    z-index: 222;
+    right: 60px;
+    bottom: 60px;
+}
+
+/* Home */
+#Home {
+    text-align: center;
+    padding: 140px 0 75px;
+}
+
+#Home .slider {
+    padding-top: 60px;
+}
+
+/* About */
+
+#About {
+    text-align: center;
+    padding: 60px 0 75px;
+}
+
+.about {
+    display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+    align-items: center;
+}
+
+.about h2 {
+    padding: 50px 0;
+}
+
+.about img {
+    max-width: 75%;
+    padding-top: 35px;
+}
+
+/* Benefits */
+
+#Benefits {
+    padding: 110px 0 75px;
+    text-align: center;
+}
+
+#Benefits h2 {
+    padding-bottom: 60px;
+}
+
+#Benefits h3 {
+    padding: 25px 0 50px;
+}
+
+#Benefits .items,.brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#Benefits .item {
+    padding-bottom: 10px;
+    max-width: 320px;
+}
+
+#Benefits .item h3 {
+    padding: 10px 0 20px;
+}
+
+#Benefits .item p {
+    padding-bottom: 10px;
+}
+
+.brand {
+    padding: 0 15px;
+    height: 50px;
+}
+
+.brand img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
 
 
 .wrapper {
     height: 100%;
     margin: auto;
-    width: 940px;
+    width: 990px;
   }

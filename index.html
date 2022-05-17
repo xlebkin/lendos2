@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -13,17 +15,102 @@
     <header>
         <nav class="wrapper">
             <ul>
-                <li><a href="#Home" class="active">Home</a></li>
-                <li><a href="#About-me">About me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
+                <li><a href="#Home">Главная</a></li>
+                <li><a href="#About">О нас</a></li>
+                <li><a href="#Benefits">Преимущества</a></li>
+                <li><a href="#Portfolio">Галерея</a></li>
+                <li><a href="#Contacts">Контакты</a></li>
             </ul>
             <hr>
+            <a href="#Home" class="scroll-up"></a>
         </nav>
     </header>
-
     
+    <main>
+        <div id="Home">
+            <section class="wrapper">
+                <h2>Магазин музыкальных инструментов</h2>
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="img/1slide.jpg">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/2slide.jpg">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/3slide.jpg">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/4slide.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="About">
+            <section class="wrapper">
+                <div class="about">
+                    <h2>О нас</h2>
+                    <p> Наши магазины предлагают лучшие музыкальные инструменты,<br> созданные мировыми производителями, а также весь спектр профессионального звукового,<br> светового и студийного оборудования.</p>
+                    <img src="img/index.jpg" alt="Лучший магазин">
+                </div>
+            </section>
+        </div>
+
+        <div id="Benefits">
+            <section class="wrapper">
+                <h2>Преимущества</h2>
+                <div class="items">
+                    <div class="item">
+                        <h3>Качество</h3>
+                        <p>Прямые поставки от производителя с полным контролем качества на всех этапах производства и гарантийным обслуживанием после покупки.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Сервис</h3>
+                        <p>Консультации квалифицированных менеджеров, доставка в удобное для вас время, сервис-центры по всей России и возможность возврата товара, если он вас не устроил.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Удобство оплаты</h3>
+                        <p>Вы можете выбрать подходящую вам схему оплаты (наличный, безналичный расчет, банковской карточкой), или покупку в рассрочку и кредит с выбором срока, процентной ставки и размера первого взноса.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Интернет-магазин</h3>
+                        <p>Выбирайте товар и совершайте покупки, не выходя из дома и получая дополнительные скидки и бонусы.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Доставка в регионы</h3>
+                        <p>У нас более 50 розничных магазинов по всей России, а также 54 200 пунктов самовывоза. Даже если в Вашем городе нет магазина, мы оперативно доставим выбранный вами товар транспортной компанией в любой регион России (включая Крым), Беларуси или Казахстана.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Работа с юридическими лицами</h3>
+                        <p>Работая с юридическими лицами, мы предоставляем полный комплект документов. Также предлагаем выгодные условия сотрудничества для бюджетных организаций.</p>
+                    </div>
+                </div>
+                <h3>Наши бренды</h3>
+                <div class="brands">
+                    <div class="brand">
+                        <img src="img/3317kfw5nekgsg48sww480cww.jpg">
+                    </div>
+                    <div class="brand">
+                        <img src="img/a7fq2wkpzpc0sc4csgwg8k8ok.jpg">
+                    </div>
+                    <div class="brand">
+                        <img src="img/6c0i0y85t10c8ok8og00skoc8.jpg">
+                    </div>
+                    <div class="brand">
+                        <img src="img/8k0kwboyf30ggo0gkg00occg4.jpg">
+                    </div>
+                    <div class="brand">
+                        <img src="img/bpy24nb4l28kg84cw88sw8g8.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+
+<script src="slider/slick.min.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
