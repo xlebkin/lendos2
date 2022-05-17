@@ -359,6 +359,15 @@ ul a {
     background: url(img/discord-color.svg) center no-repeat;
 }
 
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 88px;
+}
+
+.copirate {
+    padding: 35px 0;
+    text-align: start;
+}
 
 .wrapper {
     height: 100%;
