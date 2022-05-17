@@ -21,3 +21,11 @@ $('a[href^="#"').on('click', function() {
 
     return false;
 });
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 400) {
+        $(".scroll-up").css("display", "block");
+    } else {
+        $(".scroll-up").css("display", "none");
+    }
+});

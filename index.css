@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #070707;
-	color: #ffffff;
+    background-color: #ffffff;
+	color: #070707;
 }
 
 h2 {
@@ -22,7 +22,6 @@ h2 {
 h3 {
     font-weight: bold;
     font-size: 25px;
-	line-height: 22px;
 }
 
 p, a {
@@ -38,12 +37,13 @@ header {
 	height: 88px;
 	width: 100%;
 	z-index: 99;
+    background: rgba(255, 255, 255, 0.75);
 }
 
 hr {
-    color: #9400D3;
+    color: #0000cc;
     height: 1px;
-    background-color: #9400D3;
+    background-color: #0000cc;
     border: none;
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -54,21 +54,16 @@ ul {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    background-color: #070707;
 }
 
 ul a {
-    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
-}
-
-ul .active {
-    color: #828282;;
+    color: #070707;
 }
 
 .scroll-up {
-    display: block;
+    display: none;
     position: fixed;
     background: url(img/scrollUp.svg) center no-repeat;
     width: 50px;
@@ -91,24 +86,27 @@ ul .active {
 /* About */
 
 #About {
-    text-align: center;
-    padding: 60px 0 75px;
+    padding: 97px 0 75px;
 }
 
 .about {
     display: flex;
 	justify-content: space-between;
-	flex-direction: column;
-	text-align: center;
+	flex-direction: row;
+	text-align: start;
     align-items: center;
 }
 
 .about h2 {
-    padding: 50px 0;
+    padding-bottom: 63px;
+}
+
+.about-text {
+    max-width: 400px;
 }
 
 .about img {
-    max-width: 75%;
+    max-width: 500px;
     padding-top: 35px;
 }
 
@@ -127,34 +125,58 @@ ul .active {
     padding: 25px 0 50px;
 }
 
-#Benefits .items,.brands {
+#Benefits .items {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
+    width: 100%;
+    height: 2300px;
+    padding: 106px 0 75px;
+}
+
+#Benefits .items .first-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 90px 0 106px;
+}
+
+#Benefits .items .second-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 106px 0 90px;
 }
 
 #Benefits .item {
-    padding-bottom: 10px;
+    text-align: start;
     max-width: 320px;
+
+    background: rgba(196, 196, 196, 0.25);
+    border: 2px solid #0000cc;
+}
+
+#Benefits .first-block .item {
+    column-gap: 220px;
+}
+
+#Benefits .second-block .item {
+    column-gap: 280px;
 }
 
 #Benefits .item h3 {
-    padding: 10px 0 20px;
+    line-height: 135%;
+    padding: 18px 0 0 15px;
+    max-width: 180px;
 }
 
 #Benefits .item p {
-    padding-bottom: 10px;
-}
-
-.brand {
-    padding: 0 15px;
-    height: 50px;
-}
-
-.brand img{
-    max-width: 100px;
-    max-height: 100px;
+    padding: 44px 0 46px 15px;
 }
 
 
