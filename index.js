@@ -15,7 +15,7 @@ $('a[href^="#"').on('click', function() {
     $('html, body').animate({
         scrollTop: $(href).offset().top
     }, {
-        duration: 400,
+        duration: 500,
         easing: "linear"
     });
 

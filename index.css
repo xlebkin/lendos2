@@ -9,7 +9,8 @@
 }
 
 body {
-    background-color: #ffffff;
+    background: url(img/jazz-instruments-music-background-on-dark-blackboard.jpg) no-repeat center center fixed;
+    background-size: cover;
 	color: #070707;
 }
 
@@ -17,6 +18,7 @@ h2 {
 	font-weight: bold;
 	font-size: 34px;
 	line-height: 42px;
+    color: #FFFFFF;
 }
 
 h3 {
@@ -37,12 +39,12 @@ header {
 	height: 88px;
 	width: 100%;
 	z-index: 99;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 hr {
     color: #0000cc;
-    height: 1px;
+    height: 2px;
     background-color: #0000cc;
     border: none;
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -97,17 +99,24 @@ ul a {
     align-items: center;
 }
 
-.about h2 {
-    padding-bottom: 63px;
+.about-text h2 {
+    padding: 10px 20px 23px;
+    color: #070707;
+}
+
+.about-text p {
+    padding: 20px;
 }
 
 .about-text {
     max-width: 400px;
+    border: 2px solid #0000cc;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .about img {
     max-width: 500px;
-    padding-top: 35px;
 }
 
 /* Benefits */
@@ -157,8 +166,9 @@ ul a {
     text-align: start;
     max-width: 320px;
 
-    background: rgba(196, 196, 196, 0.25);
+    background: rgba(255, 255, 255, 0.5);
     border: 2px solid #0000cc;
+    border-radius: 25px;
 }
 
 #Benefits .first-block .item {
@@ -179,6 +189,55 @@ ul a {
     padding: 44px 0 46px 15px;
 }
 
+#Gallery {
+    padding: 110px 0 75px;
+    text-align: center;
+}
+
+#Gallery h2 {
+    padding-bottom: 90px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 40px 30px;
+}
+
+.prod-element {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    margin-bottom: 40px;
+
+    background: rgb(255, 255, 255);
+    border: 2px solid #0000cc;
+}
+
+.prod-element img {
+    padding: 10px;
+    max-width: 230px;
+}
+
+.prod-element p {
+    padding: 25px;
+}
+
+.prod-element .btn {
+    padding: 5px;
+    margin: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #0000cc;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 175px;
+}
 
 
 .wrapper {
