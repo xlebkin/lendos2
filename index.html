@@ -145,28 +145,31 @@
         <div id="Contacts">
             <section class="wrapper">
                 <h2>Как связаться</h2>
-                <form class="form">
+                <form class="form" autocomplete="on" id="form">
                     <h3>Обратная связь</h3>
                     <p>
                         <label>Имя:</label>
-                        <input type="text" name="first_name">
+                        <input type="text" name="first_name" placeholder="Хлеб" id="first_name">
                     </p>
                     <p>
                         <label>Фамилия:</label>
-                        <input type="text" name="last_name">
+                        <input type="text" name="last_name" placeholder="Хлебкин" id="last_name">
                     </p>
                     <p>
                         <label>Email:</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" placeholder="xlebkin@yandex.ru" id="email">
                     </p>
                     <p>
                         <label>Телефон:</label>
-                        <input type="tel" name="phone">
+                        <input type="tel" name="phone" placeholder="89*********" maxlength="11" id="phone">
+                    </p>
+                    <p>
+                        <textarea name="text" id="text" cols="25" rows="3" placeholder="Сообщение: (ограничение 250 символов)" maxlength="250"></textarea>
                     </p>
                     <p>
                         <label>
-                            <input type="checkbox" name="terms">
-                            Согласен на обработку персональных данных
+                            <input type="checkbox" name="terms" id="checkbox">
+                            Согласен(-на) на обработку персональных данных
                         </label>
                     </p>
                     <p>
@@ -193,7 +196,7 @@
             </div>
         </section>
     </footer>
-    
+
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 <script src="slider/slick.min.js"></script>
 <script src="index.js"></script>

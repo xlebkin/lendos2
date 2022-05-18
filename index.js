@@ -1,3 +1,5 @@
+"use strict"
+
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
@@ -7,6 +9,8 @@ $(document).ready(function(){
 		autoplaySpeed:3500,
 	});
 });
+
+alert("da")
 
 $('a[href^="#"').on('click', function() {
 
@@ -29,7 +33,6 @@ $(window).scroll(function(){
         $(".scroll-up").css("display", "none");
     }
 });
-
 
 const image1 = document.getElementsByClassName('parallax1');
 const image2 = document.getElementsByClassName('parallax2');
@@ -60,4 +63,27 @@ new simpleParallax(image4, {
 new simpleParallax(image5, {
     orientation: 'right',
     overflow: true
+});
+
+$(function() {
+    $('form button').click(function() {
+      if (!$('#checkbox').prop('checked')) {
+        return false;
+      }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('form');
+    form.addEventListener('submit', formSend);
+    
+    async function formSend(e) {
+        e.preventDefault();
+
+        let formData = new FormData(form);
+        let response = await fetch('sendmail.php', {
+            method: "POST",
+            body: formData
+        });
+    }
 });
