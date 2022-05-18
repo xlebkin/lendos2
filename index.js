@@ -10,8 +10,6 @@ $(document).ready(function(){
 	});
 });
 
-alert("da")
-
 $('a[href^="#"').on('click', function() {
 
     let href = $(this).attr('href');

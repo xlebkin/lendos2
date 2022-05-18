@@ -9,10 +9,9 @@ $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->isHTML(true);
 
-$mail->setFrom('xleb2342@gmail.com', 'user');    // от кого
-$mail->addAddress('adfkjgfhdsjfhfsvjlkd@gmail.com');   // кому
+$mail->setFrom(' почта ', ' имя ');    // от кого
+$mail->addAddress('почта');   // кому
  
-
 $title = "da";
 $body = "";
 
