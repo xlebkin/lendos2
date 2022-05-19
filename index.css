@@ -149,7 +149,7 @@ ul a {
     align-items: flex-start;
     flex-wrap: nowrap;
     flex-direction: column;
-    padding: 0 90px 0 106px;
+    padding: 0 90px;
 }
 
 #Benefits .items .second-block{
@@ -158,16 +158,17 @@ ul a {
     align-items: flex-end;
     flex-wrap: nowrap;
     flex-direction: column;
-    padding: 0 106px 0 90px;
+    padding: 0 90px;
 }
 
 #Benefits .item {
     text-align: start;
-    max-width: 320px;
+    max-width: 400px;
 
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #ffffff;
     border-radius: 25px;
+    z-index: 50;
 }
 
 #Benefits .first-block .item {
@@ -192,6 +193,7 @@ ul a {
     position: absolute;
     max-width: 150px;
     max-height: 150px;
+    z-index: 1;
 }
 
 .parallax1 {
@@ -279,8 +281,12 @@ ul a {
 }
 
 #Contacts form {
-    padding: 45px 0;
-    margin: 0 auto;
+    margin: 35px auto;
+    padding: 15px;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffffff;
+    border-radius: 25px;
 }
 
 #Contacts form legend{
@@ -312,7 +318,7 @@ ul a {
     cursor: pointer;
 }
 
-#Contacts form [type=checkbox] {
+#checkbox {
     margin-right: 10px;
 }
 
@@ -382,5 +388,127 @@ footer {
 .wrapper {
     height: 100%;
     margin: auto;
-    width: 990px;
-  }
+    max-width: 990px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
+
+h2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+h3, legend {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p, a {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* header */
+
+.scroll-up {
+    display: none;
+}
+
+/* Home */
+
+.slider .slick-arrow{
+    width: 20px;
+    height: 40px;
+}
+
+/* About */
+
+.about {
+    flex-direction: column;
+}
+
+.about-text {
+    max-width: 350px;
+    margin-bottom: 25px;
+}
+
+/* Benefits */
+
+#Benefits .items .first-block {
+    padding: 0 40px;
+}
+
+#Benefits .items .second-block{
+    padding: 0 40px;
+}
+
+.wrapper {
+    height: 100%;
+    margin: auto;
+    width: 350px;
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+h3, legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p, a {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* header */
+
+.scroll-up {
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Home */
+
+.slider .slick-arrow{
+	width: 20px;
+	height: 40px;
+}
+
+/* About */
+
+.about {
+    flex-direction: column;
+}
+
+.about-text {
+    max-width: 350px;
+    margin-bottom: 25px;
+}
+
+/* Benefits */
+
+#Benefits .items .first-block {
+    padding: 0 40px;
+}
+
+#Benefits .items .second-block{
+    padding: 0 40px;
+}
+
+.wrapper {
+    height: 100%;
+    margin: auto;
+    width: 580px;
+}
+}
