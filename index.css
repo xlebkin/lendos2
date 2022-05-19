@@ -21,7 +21,7 @@ h2 {
     color: #FFFFFF;
 }
 
-h3 {
+h3, legend {
     font-weight: bold;
     font-size: 25px;
 }
@@ -283,7 +283,7 @@ ul a {
     margin: 0 auto;
 }
 
-#Contacts form h3{
+#Contacts form legend{
     padding-bottom: 25px;
 }
 

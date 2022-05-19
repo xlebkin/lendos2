@@ -1,40 +1,32 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require_once '/PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-
+require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
-$mail->CharSet = 'UTF-8';
-$mail->isHTML(true);
+try {
+    $mail->SMTPDebug = 2;
+    $mail->isSMTP();
+    $mail->Host = 'smtp.mail.ru';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'xleb.xleb00';
+    $mail->Password = 'dA2P1NroOi&s';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
+    $mail->CharSet = 'UTF-8';
+    //Отправитель
+    $mail->setFrom('xleb.xleb00@mail.ru');
+    // Получатели
+    $mail->addAddress('welipiy248@dufeed.com');
 
-$mail->setFrom(' почта ', ' имя ');    // от кого
-$mail->addAddress('почта');   // кому
- 
-$title = "da";
-$body = "";
-
-if(trim(!empty($_POST['first_name']))){
-    $body.='<b>Имя:</b> '.$_POST[first_name].'<br>';
+    //Контент сообщения
+    $mail->isHTML(true);
+    $mail->Subject = 'Мое первое сообщение далеко';
+    $mail->Body    = 'Мое сообщение о новых';
+    $mail->AltBody = 'Новое сообщение через mailer';
+    $mail->send();
+echo 'Сообщение успешно отправлено';
+    } catch (Exception $e) {
+        echo 'При отправке сообщения произошла следующая ошибка : ', $mail->ErrorInfo;
 }
-if(trim(!empty($_POST['last_name']))){
-    $body.='<b>Фамилия:</b> '.$_POST[last_name].'<br>';
-}
-if(trim(!empty($_POST['email']))){
-    $body.='<b>Почта:</b> '.$_POST[email].'<br>';
-}
-if(trim(!empty($_POST['tel']))){
-    $body.='<b>Номер:</b> '.$_POST[tel].'<br><br>';
-}
-if(trim(!empty($_POST['text']))){
-    $body.='<b>Сообщение:</b><br><br> '.$_POST[text];
-}
-
-$mail->Body = $body;
-
-// Отправляем
-$mail->send();
-    echo 'Message has been sent';
-
 ?>
+
