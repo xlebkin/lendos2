@@ -50,6 +50,10 @@ hr {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
+.burger-menu {
+    display: none;
+}
+
 ul {
     height: 100%;
     display: flex;
@@ -198,27 +202,27 @@ ul a {
 
 .parallax1 {
     top: 1450px;
-    right: 300px;
+    right: 100px;
 }
 
 .parallax2 {
     top: 1750px;
-    left: 300px;
+    left: 100px;
 }
 
 .parallax3 {
     top: 2000px;
-    right: 350px;
+    right: 200px;
 }
 
 .parallax4 {
     top: 2350px;
-    left: 250px;
+    left: 150px;
 }
 
 .parallax5 {
     top: 2600px;
-    right: 400px;
+    right: 200px;
 }
 
 /* Gallery */
@@ -237,7 +241,7 @@ ul a {
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
-    padding: 40px 30px;
+    padding: 40px 0;
 }
 
 .prod-element {
@@ -389,6 +393,7 @@ footer {
     height: 100%;
     margin: auto;
     max-width: 990px;
+    align-content: center;
 }
 
 @media screen and (min-width: 375px) and (max-width: 600px) {
@@ -413,14 +418,12 @@ p, a {
 /* header */
 
 .scroll-up {
-    display: none;
+    right: 10px;
+    bottom: 10px;
 }
 
-/* Home */
-
-.slider .slick-arrow{
-    width: 20px;
-    height: 40px;
+header ul li {
+    display: none;
 }
 
 /* About */
@@ -434,20 +437,29 @@ p, a {
     margin-bottom: 25px;
 }
 
+.about img {
+    max-width: 100%;
+}
+
 /* Benefits */
 
 #Benefits .items .first-block {
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 #Benefits .items .second-block{
-    padding: 0 40px;
+    padding: 0 30px;
+}
+
+.products {
+    justify-content: center;
 }
 
 .wrapper {
     height: 100%;
     margin: auto;
-    width: 350px;
+    width: 340px;
+    
 }
 
 }

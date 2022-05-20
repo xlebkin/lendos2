@@ -24,12 +24,18 @@ $('a[href^="#"').on('click', function() {
     return false;
 });
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 400) {
-        $(".scroll-up").css("display", "block");
-    } else {
+enquire.register('screen and (min-width: 951px)', {
+    match:$(window).scroll(function(){
+        if ($(this).scrollTop() > 400) {
+            $(".scroll-up").css("display", "block");
+        } else {
+            $(".scroll-up").css("display", "none");
+        }
+    }),
+
+    unmatch: function() {
         $(".scroll-up").css("display", "none");
-    }
+    },
 });
 
 const image1 = document.getElementsByClassName('parallax1');
