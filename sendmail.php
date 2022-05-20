@@ -8,7 +8,7 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.mail.ru';
     $mail->SMTPAuth = true;
-    $mail->Username = 'xleb.xleb00';
+    $mail->Username = 'xleb.xleb00@mail.ru';
     $mail->Password = 'dA2P1NroOi&s';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
